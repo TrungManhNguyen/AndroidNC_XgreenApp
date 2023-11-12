@@ -47,11 +47,11 @@
         <activity
             android:name=".GUI.LoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.NOID" />
+            android:theme="@style/Theme.Xgreen" />
         <activity
             android:name=".GUI.RegisterActivity"
             android:exported="false"
-            android:theme="@style/Theme.NOID" />
+            android:theme="@style/Theme.Xgreen" />
         <activity
             android:name=".GUI.MainActivity"
             android:exported="false"

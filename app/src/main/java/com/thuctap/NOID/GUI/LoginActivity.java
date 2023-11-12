@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         String userEmail = edtForgotEmail.getText().toString();
-                        if (userEmail.equals("kylekhanh1028@gmail.com") || userEmail.equals("khanh1028")) {
+                        if (userEmail.equals("tuan277@gmail.com") || userEmail.equals("khanh1028")) {
                             Toast.makeText(LoginActivity.this, "Địa chỉ email hoặc tên đăng nhập không được cho phép!", Toast.LENGTH_SHORT).show();
                             return;
                         }
