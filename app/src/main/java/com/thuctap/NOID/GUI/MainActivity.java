@@ -15,6 +15,7 @@ import com.thuctap.NOID.Fragment.DatHangFragment;
 import com.thuctap.NOID.Fragment.HoatDongFragment;
 import com.thuctap.NOID.Fragment.KhacFragment;
 import com.thuctap.NOID.Fragment.TrangChuFragment;
+import com.thuctap.NOID.Fragment.SellFragment;
 import com.thuctap.NOID.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,11 +47,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.actionOrder:
                         viewPager.setCurrentItem(1);
                         break;
-                    case R.id.actionHistory:
+                    case R.id.actionSell:
                         viewPager.setCurrentItem(2);
                         break;
-                    case R.id.actionOther:
+                    case R.id.actionHistory:
                         viewPager.setCurrentItem(3);
+                        break;
+                    case R.id.actionOther:
+                        viewPager.setCurrentItem(4);
                         break;
                 }
                 return false;
@@ -74,8 +78,10 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         return new DatHangFragment();
                     case 2:
-                        return new HoatDongFragment();
+                        return new SellFragment();
                     case 3:
+                        return new HoatDongFragment();
+                    case 4:
                         return new KhacFragment();
                     default:
                         return new TrangChuFragment();
@@ -84,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public int getItemCount() {
-                return 4;
+                return 5;
             }
         };
         viewPager.setAdapter(fragmentAdapter);
@@ -101,9 +107,12 @@ public class MainActivity extends AppCompatActivity {
                         bottomNavMenu.getMenu().findItem(R.id.actionOrder).setChecked(true);
                         break;
                     case 2:
-                        bottomNavMenu.getMenu().findItem(R.id.actionHistory).setChecked(true);
+                        bottomNavMenu.getMenu().findItem(R.id.actionSell).setChecked(true);
                         break;
                     case 3:
+                        bottomNavMenu.getMenu().findItem(R.id.actionHistory).setChecked(true);
+                        break;
+                    case 4:
                         bottomNavMenu.getMenu().findItem(R.id.actionOther).setChecked(true);
                         break;
                 }
