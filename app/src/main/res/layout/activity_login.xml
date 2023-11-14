@@ -102,19 +102,34 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
-                    android:textAllCaps="false"
-                    android:id="@+id/btnSignIn"
-                    android:layout_width="292dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/button_rounded"
-                    android:text="Đăng Nhập"
-                    app:cornerRadius="10dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/btnSignIn"
+                        android:layout_width="292dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_rounded"
+                        android:text="Đăng Nhập"
+                        app:cornerRadius="10dp" />
+
+                    <ImageView
+                        android:id="@+id/icFingerPrint"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        app:srcCompat="@drawable/ic_baseline_fingerprint_24" />
+                </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -138,6 +153,7 @@
                         android:layout_marginRight="2dp"
                         android:text="Quên mật khẩu?" />
                 </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -146,5 +162,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/wave_siginin_bottom" />
+        android:background="@drawable/wave_siginin_bottom" >
+
+    </LinearLayout>
 </LinearLayout>

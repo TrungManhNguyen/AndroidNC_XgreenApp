@@ -110,7 +110,7 @@ public class TrangChuFragment extends Fragment {
         /* Tự động chuyển hình ảnh */
         ImageSlider imageSlider = view.findViewById(R.id.imgSlider);
         ArrayList<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.background_ads_1, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.background_ads_2, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.background_ads_2, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.background_ads_1, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.background_ads_2, ScaleTypes.FIT));
